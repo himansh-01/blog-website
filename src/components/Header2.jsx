@@ -9,8 +9,11 @@ import { FiHelpCircle } from "react-icons/fi";
 import { IoSettingsOutline } from "react-icons/io5";
 import { MdPowerSettingsNew } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Header2() {
+
+  const { user } = useAuth0();
 
   const[click, setClick] = useState(false)
 
@@ -46,7 +49,7 @@ function Header2() {
                 <div className='flex items-center w-[11rem] mr-[6rem]'>
                     <Link to="/post"><div className='flex items-center text-xl cursor-pointer'><FaRegEdit />Post</div></Link>
                     <MdOutlineNotificationsNone className='font-extrabold text-2xl ml-[2rem] mr-[1.5rem] cursor-pointer' />
-                    <div className='w-[2rem] h-[2rem] rounded-full cursor-pointer'><img src='https://th.bing.com/th/id/OIP.CG70mC-flvJIYFRVmR9FZwHaHa?rs=1&pid=ImgDetMain' alt='' onClick={sideBar}/></div>
+                    <div className='w-[2rem] h-[2rem] rounded-full cursor-pointer'><img src={user.picture} alt='https://th.bing.com/th/id/OIP.CG70mC-flvJIYFRVmR9FZwHaHa?rs=1&pid=ImgDetMain' onClick={sideBar}/></div>
                 </div>    
             </div>
         </div>
