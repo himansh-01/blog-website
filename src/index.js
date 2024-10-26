@@ -7,10 +7,10 @@ import App from './App';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <Auth0Provider
-    domain="dev-k7ce3ygbp1z3443m.us.auth0.com"
-    clientId="FaPZzMYrwGlj51LyMU313ZjaQ7p864wQ"
+    domain="dev-dqmlv3apl1dq3uvy.us.auth0.com"
+    clientId="dFu49kNuYIMdt2fwUrPPHkPVP0Pl8B9L"
     authorizationParams={{
-      redirect_uri: "https://blog-website-git-main-himansh-s-projects.vercel.app/home"
+      redirect_uri: window.location.origin
     }}
   >
     <App />
