@@ -10,7 +10,7 @@ root.render(
     domain="dev-dqmlv3apl1dq3uvy.us.auth0.com"
     clientId="dFu49kNuYIMdt2fwUrPPHkPVP0Pl8B9L"
     authorizationParams={{
-      redirect_uri: window.location.origin
+      redirect_uri: "https://blog-website-git-main-himansh-s-projects.vercel.app/home"
     }}
   >
     <App />
