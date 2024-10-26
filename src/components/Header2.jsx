@@ -9,8 +9,11 @@ import { FiHelpCircle } from "react-icons/fi";
 import { IoSettingsOutline } from "react-icons/io5";
 import { MdPowerSettingsNew } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function Header2() {
+
+  const { logout } = useAuth0();
 
   const[click, setClick] = useState(false)
 
@@ -35,7 +38,7 @@ function Header2() {
           <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><AiOutlineInfoCircle /> About Us</div>          
           <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><FiHelpCircle /> Help and Support</div>          
           <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><IoSettingsOutline /> Settings</div>
-          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><MdPowerSettingsNew /> Sign out</div>          
+          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><MdPowerSettingsNew /> Sign out</div>          
 
         </div>
       <div className='w-[100%] h-[100%]'>
