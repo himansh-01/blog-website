@@ -40,7 +40,6 @@ function Header2() {
           <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><IoSettingsOutline /> Settings</div>
           <div className='gap-[2rem] flex text-2xl items-center mb-[1rem]'></div>><MdPowerSettingsNew /> Sign out</div>
           <div className='gap[1rem] flex text-lg items-center>{user.name}</div>
-
         </div>
     <div className='w-[100%] h-[100%]'>
         <div className='flex w-[100%] h-[80px] border border-black shadow-lg rounded-xl items-center'>
