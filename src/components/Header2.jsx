@@ -13,7 +13,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 function Header2() {
 
-  const { user, logout } = useAuth0();
+  const { logout } = useAuth0();
 
   const[click, setClick] = useState(false)
 
@@ -39,7 +39,6 @@ function Header2() {
           <div className='gap-[2rem] flex text-2xl items-center mb-[2rem] cursor-pointer'><FiHelpCircle /> Help and Support</div>          
           <div className='gap-[2rem] flex text-2xl items-center mb-[2rem] cursor-pointer'><IoSettingsOutline /> Settings</div>
           <div className='gap-[2rem] flex text-2xl items-center mb-[1rem] cursor-pointer' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><MdPowerSettingsNew /> Sign out</div>
-          <div className='gap-[1rem] flex text-lg items-center mb-[1rem] cursor-default'>{user.email}</div>
 
         </div>
       <div className='w-[100%] h-[100%]'>
