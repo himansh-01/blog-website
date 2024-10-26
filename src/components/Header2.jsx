@@ -32,13 +32,13 @@ function Header2() {
                 opacity: click ? 1:0
             }
         }>
-          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><FaRegUser /> Profile</div>
-          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><VscLibrary /> Library</div>          
-          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><IoSearch /> Explore</div>          
-          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><AiOutlineInfoCircle /> About Us</div>          
-          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><FiHelpCircle /> Help and Support</div>          
-          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]'><IoSettingsOutline /> Settings</div>
-          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem]' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><MdPowerSettingsNew /> Sign out</div>          
+          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem] cursor-pointer'><FaRegUser /> Profile</div>
+          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem] cursor-pointer'><VscLibrary /> Library</div>          
+          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem] cursor-pointer'><IoSearch /> Explore</div>          
+          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem] cursor-pointer'><AiOutlineInfoCircle /> About Us</div>          
+          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem] cursor-pointer'><FiHelpCircle /> Help and Support</div>          
+          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem] cursor-pointer'><IoSettingsOutline /> Settings</div>
+          <div className='gap-[2rem] flex text-2xl items-center mb-[2rem] cursor-pointer' onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}><MdPowerSettingsNew /> Sign out</div>          
 
         </div>
       <div className='w-[100%] h-[100%]'>
